@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    transition: .5s ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em .5em;
+}
+header li{
+list-style: none;
+display: inline-block;
+margin-right: .5em;
+}
+header li a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    font-size: .9em;
+    font-weight: 800;
+}
+.logo{
+    max-width: 30%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    padding:1em;
+    text-align: center;
+    line-height:1.2;
+}
+.content{
+    padding: 1.5em;
+}
+
+.content #contentHeading{
+font-size: 1.42em;
+margin: 1em 0;
+font-weight: 800;
+line-height: 1.35;
+} 
+.mainheaderpara{
+font-size: .91em;
+margin-bottom: 1.5em;
+}
+
+.content input[type="email"]{
+    width: 100%;
+    padding: .81em;
+    outline: none;
+}
+.content a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin-top: 1em;
+    background: hsl(224, 93%, 58%);
+    color: #fff;
+    padding: .7em;
+    font-weight: 800;
+}
+.center{
+    padding: 1em;
+    text-align: center;
+display: flex;
+flex-direction: column-reverse;
+position: relative;
+}
+
+.centercontent{
+    margin: 2em 0;
+    padding: .5em 1em;
+}
+.centercontent h2{
+    font-size: 1.65em;
+    margin: 1em 0;
+}
+.centercontent p{
+    margin: 1.5em 0;
+    line-height: 1.3;
+    font-size: .9em;
+}
+.centercontent a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    font-weight: 800;
+    position: relative;
+}
+
+.start::after{
+    content: '';
+    position: absolute;
+    top: 150%;
+    right: 0;
+    left: 0;
+    background: hsl(170, 45%, 43%);
+    width: 100%;
+    height: 1.5px;
+}
+
+.arrow{
+    position: absolute;
+    top: -3.5px;
+    width: 30px;
+    
+}
+.box{
+box-shadow: 0 0 5px hsl(0, 0%, 85%);
+border-radius: 5px;
+padding: 1em .7em;
+width: 80%;
+position: relative;
+margin: auto;
+}
+.box p{
+    font-size: .85em;
+}
+.profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: .5em;
+    margin-top: .781em;
+    gap: 1em;
+}
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+}
+.profile h3,h2{
+    font-size: .95em;
+    line-height: 2;
+}
+.profile p{
+    font-size: .8em;
+}
+.box .quote{
+    position: relative;
+    left: -40%;
+    transform: translateX(-60%);
+    margin-bottom: .5em;
+    
+}
+
+.subscription{
+    text-align: center;
+    padding: 3em 2.5em;
+    background: hsl(212,25%,45%);
+}
+.subscriptionInfo{
+    margin: 1.5em 0;
+}
+.subscriptionInfo h2{
+    font-size: 1.5em;
+    margin: .71em 0;
+    color: #fff;
+}
+.subscriptionInfo p{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.subscriptionForm{
+    margin-top: 2.5em;
+}
+.subscriptionForm input{
+    padding:.81em;
+    width: 100%;
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 15px hsl(0, 0%, 50%);
+}
+.subscriptionForm button{
+    width: 100%;
+    margin-top: 1em;
+    padding: .71em;
+    background:hsl(224, 93%, 58%);
+    color: #fff;
+    outline: none;
+    border: 0;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:  2em;
+    background: hsl(243, 87%, 12%);
+}
+ footer ul{
+     list-style: none;
+     margin: 1em 0;
+ }
+ footer li{
+    margin: .4em 0;
+ }
+ footer ul li a{
+     text-decoration: none;
+     color: #fff;
+ }
+
+.about{
+    padding: .5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.footerlogo{
+    margin-bottom: 1.75em;
+    width: 50%;
+}
+
+#img1,
+#img2{
+    margin-right: 15px;
+}
+.about p{
+    color: #fff;
+    margin-bottom: .52em;
+}
+
+
+
+
+@media (min-width:390px){
+    header{
+        padding:1em;
+    }
+    header img{
+        max-width: 90%;
+    }
+}
+
+
+/* viewpoet after 650px */
+@media (min-width:650px){
+    header ul li{
+        margin-right: 2.5em;
+    }
+    header ul li a{
+        font-size: 1.2em;
+    }
+    .container{
+        display: flexbox;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        /* border: 1px solid red; */
+        margin-top: 5em;
+    }
+ .img1{
+    max-width: 40%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    column-gap: 5px;
+    /* border: 1px solid green; */
+    padding: 0 1em;
+}
+
+.content #contentHeading    {
+    grid-column: 1/-1;
+    /* border: 1px solid red; */
+    grid-row: 1/2;
+    margin: 0;
+    padding: .2em .5em;
+    font-size: 1.5em;
+}
+.content p{
+    grid-column: 1/-1;
+    align-self: center;
+    grid-row: 2/3;
+    padding: 1em 0;
+    font-size: .91em;
+    margin: 0;
+    padding: 1em .5em;
+    line-height: 1.4;
+}
+.content input[type="email"]{
+    padding: 0;
+    height: 51.2px;
+    grid-template-columns: 1/2;
+    align-self:baseline;
+    padding:.7em;
+    font-size: 1em;
+    outline: none;
+}
+.container .content #getstart{
+    all: unset;
+    background: hsl(224, 93%, 58%);
+    padding: 1em;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 800;
+    text-align: center;
+    align-self: baseline;
+    
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+    line-height: 1;
+    padding: 1em;
+    padding-left: 2em;
+    box-sizing: border-box;
+    margin: 2em 0;
+}
+
+.img2{
+    max-width: 40%;
+}
+
+.centercontent{
+    /* border: 1px solid green; */
+    width: 80%;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.centercontent h2{
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.centercontent p{
+    font-size: .91em;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.box{
+    box-shadow: 0px 0px 15px hsl(0, 15%, 85%);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0;
+    margin-top: 2.5em;
+    width: 70%;
+    }
+    .profile{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+    }
+    .profile img{
+        border-radius: 50%;
+        width: 70px;
+    }
+    .profile h3,h2{
+        font-size: .95em;
+        line-height: 2;
+    }
+    .profile p{
+        font-size: .8em;
+    }
+    .box .quote{
+        position: relative;
+        left: -2%;
+        transform: translateX(-10%);
+        margin-bottom: .5em;
+        width: 25px;
+    }
+.box p{
+    font-size: .9em;
+    line-height: 1.5;
+}    
+.subscription{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 1;
+    gap: 1em;
+    padding: 3em 1em;
+}
+.subscriptionInfo{
+    box-sizing: border-box;
+    width: 65%;
+    padding: .5em;
+}
+.subscriptionInfo h2{
+    font-size: 1.92em;
+    margin-bottom: .5em;
+    padding: 0;
+    line-height: 1;
+}
+.subscriptionInfo p{
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+.subscriptionForm button{
+    width: 70%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5em 1.5em;
+}
+
+
+}
+
+
+@media (min-width:1100px){
+    header{
+        padding: 2em;
+    }
+    header ul li{
+        margin-right: 5em;
+    }
+    .container{
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .img1{
+        max-width: 50%;
+        /* border: 1px solid red; */
+        /* justify-self: baseline; */
+        align-self: baseline;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: .5em;
+        text-align: left;
+    }
+    .content #contentHeading    {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        margin: 0;
+        padding: .5em;
+        font-size: 2em;
+    }
+    .content p{
+        grid-column: 1/-1;
+        align-self: center;
+        grid-row: 2/3;
+        padding: 2em 0;
+        font-size: 1.42em;
+        margin: 0;
+        margin-bottom: 1.1em;
+        padding: .5em;
+    }
+    .content input[type="email"]{
+        padding: 0;
+        height: 51.2px;
+        grid-template-columns: 1/2;
+        align-self:baseline;
+        padding:.7em;
+        font-size: 1.2em;
+        outline: none;
+    }
+    .container .content #getstart{
+        all: unset;
+        background: hsl(224, 93%, 58%);
+        padding: 1em;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 800;
+        text-align: center;
+        align-self: baseline;
+        
+    }
+
+    .centercontent h2{
+        font-size: 2.5em;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .centercontent p{
+        font-size: 1.2em;
+        padding: 0;
+        line-height: 1.5;
+    }
+    .box{
+        width: 60%;
+    }
+
+    .subscription{
+        padding: 3em 2em;
+    }
+    .subscriptionInfo{
+        box-sizing: border-box;
+        width: 55%;
+        padding: .5em;
+    }
+    .subscriptionInfo h2{
+        font-size: 2.5em;
+    }
+    .subscriptionInfo p{
+        font-size: 1.2em;
+        line-height: 1.3;
+    }
+    
+    .subscriptionForm button{
+        width: 60%;
+    }
+footer{
+    padding: 4em 2em;
+}    
+
+}
+
